@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: normal;
+    color: #1E0606;
+}
+
+img {
+    display: block;   
+}
+
+a {
+    text-decoration: none;
+    color: #1E0606;
+}
+
+h1, h2, h3 {
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1E0606;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 46px;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+.hidden {
+    font-size: 0;
+    height: 0; 
+}
+
+.dots_none {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.button {
+    height: 40px;
+    padding: 9px 22px;    
+    font-weight: bold;
+    line-height: 22px;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #000000;    
+}
+.modal .button {
+    color: #E1E1E1;
+    background: #C1C1C1; 
+}
+
+.title {
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+  }
+  
+.nav_search {
+    display: flex;
+    align-items: center;
+  }
+
+.nav_item {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #1E0606;  
+    margin-right: 20px;  
+}
+
+.button_search {
+    border: none;
+    background: none;
+}
+
+.header .header_contact {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 23px;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+    display: flex;
+    font-family: Crimson Text;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.breadcrumb_link {
+    margin-right: 20px;
+}
+
+.breadcrumb_img {
+    margin-top: 7px;
+    margin-right: 20px;
+}
+
+.breadcrumb_text {
+    margin: 0;
+    opacity: 0.5;
+}
+
+/* Slider */
+
+.pages_slider {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 63px;
+}
+
+.slider_list {
+    display: flex;
+}
+
+.slider_link {
+    font-family: Montserrat;
+    font-weight: bold;
+    margin-right: 64px;
+}
+
+.slider_active_link {
+    color: #C29974;
+    margin-right: 67px;
+    margin-left: 457px;
+}
+
+.last {
+    margin-right: 457px;
+}
+
+/* Footer */
+
+.footer {
+    background: #434343;
+    margin: 0 auto;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_title {
+    color: #AAAAAA;
+}
+
+.footer_item {
+    margin-bottom: 15px;
+}
+
+.footer_link {
+    color: #FFFFFF;
+}
+
+.footer_title {
+    margin-top: 100px;
+    margin-bottom: 23px;
+}
+
+.border {
+    border-top: 1px solid #666666;
+    margin-bottom: 28px;
+    width: 380px;    
+}
+
+.subscribe_wrapper {
+}
+
+.nav_email {
+}
+
+.subscribe {
+    display: flex;
+    width: 380px;
+    height: 40px;
+    background: #666666;
+    margin-bottom: 25px;
+    
+}
+
+input::placeholder {
+    color: #EBEBEB;
+}
+
+.mail {
+    font-size: 16px;
+    line-height: 22px;
+    color: #EBEBEB;
+    width: 300px;
+    height: 40px;
+    background-color: #666666;
+    padding: 0 0 0 15px;
+    border: none;
+}
+
+
+.social_list {
+    display: flex;
+}
+
+.social_item {
+    margin-right: 10px;
+}
+
+.footer_bottom {
+    padding-bottom: 100px;
+    color: #FFFFFF;
+}
+
+.border_rating {
+    border-top: 1px solid #666666;
+    margin-top: 13px;
+    margin-bottom: 23px;
+    width: 1180px;
+}
+
+.rating_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.rating_text {
+    margin-right: 25px;
+}
+
+.footer_rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 155px;
+}
+
+.rating_star {
+    margin-right: 3px;
+}
+
+.rating_license {
+    margin-right: 109px;
+}
+
+.rating_production {
+    color: #A2A2A2;
+}

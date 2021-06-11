@@ -1,0 +1,55 @@
+/* Sidebar */
+
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #E5EAF8;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+
+.cost {
+    border: none;
+    margin-left: 158px;
+}
+
+.color {
+    border: none;
+}
+
+.delivery {
+    border: none;
+}
+
+.amount {
+    border: none;
+}
+
+.button {
+    margin-right: 262px;
+}
+/* Catalog */
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pages_slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider_link {
+    display: flex;
+    align-items: center;
+}
+
+
+.slider_left, .slider_right {
+    width: 13px;
+    height: 26px;
+    border: none;
+    background: none; 
+}

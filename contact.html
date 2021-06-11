@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header container">
+        <a href="index.html"><img src="images/mainlogo.svg" alt="logo" width="100" height="52"></a>
+        <nav class="menu">
+            <ul class="nav_link dots_none">
+                <li class="nav_item"><a href="blog.html">Blog</a></li>
+                <li class="nav_item"><a href="catalog.html">Catalog</a></li>
+                <li class="nav_item"><a href="#">About Us</a></li>
+            </ul>
+            <ul class="nav_search dots_none">
+                <li class="nav_item"><button class="button_search" type="submit"><img src="images/button/btn-search.svg" alt="search" width="17" height="17"></button></li>
+                <li class="nav_item"><a class="header_contact" href="contact.html">Contact Us</a></li>
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="title">Contact Us</h1>
+            <div class="breadcrumb">
+                <a class="breadcrumb_link" href="index.html">Home</a>
+                <img class="breadcrumb_img" src="images/stroke.svg" alt="stroke" width="8" height="12">
+                <p class="breadcrumb_text">Contact Us</p>
+            </div>  
+            <p>Contact Us</p>
+            <div class="modal" id="contact_form">
+                <form action="/contact" method="POST">
+                    <fieldset>
+                        <legend class="hidden">enter</legend> 
+                        <ul class="dots_none">
+                            <li>
+                                <label for="field_name">Name</label>
+                                <input id="field_name" type="text" name="user_name">
+                            </li>
+                            <li>
+                                <label for="field_phone">Phone</label>
+                                <input id="field_phone" type="number" name="user_phone">     
+                            </li>
+                            <li>
+                                <label for="field_email">Email</label>
+                                <input id="field_email" type="email" name="user_email">
+                            </li>
+                            <li>
+                                <label for="field_message">Message</label>
+                                <textarea id="field_message" name="user_message"></textarea>
+                            </li>
+                        </ul>  
+                            <label for="check_input"> 
+                            <input id="check_input" type="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+            
+                            <button class="button" type="submit">Submit</button>            
+                    </fieldset>
+                </form>
+            </div>
+            <article>
+                <p>Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p>Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p>An expert is waiting to help you!</p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_main container">
+            <div class="footer_nav">
+                <p class="footer_title">Navigation</p>
+                <div class="border"></div>
+                    <ul class="nav_list dots_none">
+                        <li class="footer_item"><a class="footer_link" href="#">About Us</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Blog</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Design Services</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Featured On</a></li>
+                        <li class="footer_item"><a class="footer_link" href="catalog.html">2018 Holiday Catalog</a></li>
+                        <li class="footer_item"><a class="footer_link" href="#">Shop By Designer</a></li>
+                    </ul>
+            </div> 
+            <div class="footer_info">
+                <p class="footer_title">Customer Information</p>
+                <div class="border"></div>
+                <ul class="nav_list dots_none">
+                    <li class="footer_item"><a class="footer_link" href="contact.html">Contact Us</a></li>
+                    <li class="footer_item"><a class="footer_link" href="#">Sale Exclusions</a></li>
+                    <li class="footer_item"><a class="footer_link" href="#">Shipping & Returns</a></li>
+                    <li class="footer_item"><a class="footer_link" href="#">Terms & Conditions</a></li>
+                    <li class="footer_item"><a class="footer_link" href="#">Search</a></li>
+                </ul>
+            </div>        
+            <div class="footer_connect">
+                <p class="footer_title">Connect</p>
+                <div class="border"></div>
+                <div class="subscribe_wrapper">
+                    <div class="nav_email">
+                        <form action="" method="POST" class="subscribe">
+                            <label for="subscribe_email"></label>
+                            <input id="subscribe_email" type="email" name="user_email" placeholder="Email" class="mail">
+                            <button class="button" type="submit">Join</button>
+                        </form>                
+                    </div>
+                    <div class="footer_social">
+                        <ul class="social dots_none">
+                            <li><a href="#"><img src="images/logo/facebook.svg" alt="facebook" width="30" height="30"></a></li>
+                            <li><a href="#"><img src="images/logo/twitter.svg" alt="twitter" width="30" height="30"></a></li>
+                            <li><a href="#"><img src="images/logo/pinterest.svg" alt="pinterest" width="30" height="30"></a></li>
+                            <li><a href="#"><img src="images/logo/instagram.svg" alt="instagram" width="30" height="30"></a></li>
+                        </ul>
+                    </div>
+                </div>                
+            </div> 
+        </div>
+        <div class="footer_bottom container">
+            <div class="border_rating"></div>
+            <div class="rating_wrapper">
+                <p class="rating_text">Company Rating</p>
+                <div class="footer_rating">
+                    <img src="images/star.svg" alt="star" width="17" height="16">
+                    <img src="images/star.svg" alt="star" width="17" height="16">        
+                    <img src="images/star.svg" alt="star" width="17" height="16">        
+                    <img src="images/star.svg" alt="star" width="17" height="16">        
+                    <img src="images/star.svg" alt="star" width="17" height="16">
+                </div>                    
+                <p class="rating_license">Copyright © 2018 Dlk • Design Life Kids</p>
+                <p class="rating_production">Web Design — Direct Line Development</p>
+                </div>
+        </div>        
+    </footer>        
+</body>
+</html>
