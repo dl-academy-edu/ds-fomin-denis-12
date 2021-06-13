@@ -235,7 +235,7 @@ h3 {
     
 }
 
-input::placeholder {
+input[type="email"]::placeholder {
     color: #EBEBEB;
 }
 
@@ -303,3 +303,141 @@ input::placeholder {
     color: #A2A2A2;
     margin: 0;
 }
+
+/* Form */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form {
+    max-width: 680px;
+    width: 100%;
+    background: #E5EAF8;
+    padding: 42px 40px;
+    margin-bottom: 60px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    height: 50px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+    resize: none;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #B3B3B3;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #CCCCCC;
+}
+
+.label_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form_2_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two_column {
+    width: 290px;
+}
+
+.form_label {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+input[type="text"]::placeholder {
+    font-size: 18px;
+    line-height: 25px;
+    color: #1E0606;
+    padding: 14px 20px 11px 20px;
+}
+
+.form_checkbox_input {
+    display: none;
+}
+
+.form_checkbox_label {
+    position: relative;
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+    padding-left: 34px;
+    cursor: pointer;
+}
+
+.form_checkbox_label:before,
+.form_checkbox_label:after {
+    content: '';
+    position: absolute;
+    display: block;
+}
+
+
+.form_checkbox_label:before {
+    top: -4px;
+    left: 0;
+    border: 2px solid #C29974;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+}
+
+.form_checkbox_label:after {
+    top: -3px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/Stroke_active.svg);
+    opacity: 0;
+}
+
+.disabled {
+    font-size: 14px;
+    line-height: 19px;
+    color: #1E0606;
+}
+
+.form_checkbox_input:checked + .form_checkbox_label:after, 
+.form_checkbox_label:before, .disabled {
+    opacity: 1;
+}
+/* not working */
+/* .form_checkbox_input:disabled + .form_checkbox_label:after, 
+.form_checkbox_label:before, .disabled {
+    opacity: 0.5;
+} */
+
+.form_checkbox_label:hover {
+    text-decoration-line: underline;
+}
+
+
+
+
+
