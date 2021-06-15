@@ -28,6 +28,14 @@
     color: #1E0606;
 }
 
+.blog_title:hover {
+    text-decoration-line: underline;
+}
+
+.blog_title:active {
+    text-decoration-line: underline;
+}
+
 .blog_text {
     font-weight: normal;
     font-size: 18px;

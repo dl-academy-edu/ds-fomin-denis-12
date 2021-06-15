@@ -50,6 +50,10 @@
     cursor: pointer;
 }
 
+.button_passive:hover {
+    background: #725F5B;
+}
+
 .banner_text {
     z-index: 1;
 }
