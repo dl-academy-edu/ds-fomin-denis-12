@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="css/blog.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header container">
-        <a href="index.html"><img src="images/mainlogo.svg" alt="logo" width="100" height="52"></a>
+        <a class="logo" href="index.html"><img src="images/mainlogo.svg" alt="logo" width="100" height="52"></a>
         <nav class="menu">
             <ul class="nav_link dots_none">
                 <li class="nav_item"><a href="blog.html">Blog</a></li>
@@ -35,9 +34,11 @@
             </div>  
         </section>
         <section class="container">
+            <h2 class="hidden">Blog</h2>
             <ul class="blog_list dots_none">
                 <li>
                     <article class="blog_item">
+                        <h2 class="hidden">Blog Item</h2>
                         <img class="blog_img" src="images/blog/blog1.jpg" alt="blog_1" width="380" height="220">
                         <p class="date_of_article">23rd August 2018</p>
                         <a class="blog_title" href="#">Top 5 fastest growing it service companies in philly</a>
@@ -46,6 +47,7 @@
                 </li>
                 <li>
                     <article class="blog_item">
+                        <h2 class="hidden">Blog Item</h2>
                         <img class="blog_img" src="images/blog/blog2.jpg" alt="blog_2" width="380" height="220">
                         <p class="date_of_article">23rd August 2018</p>
                         <a class="blog_title" href="#">Best financial</a>
@@ -54,14 +56,16 @@
                 </li>
                 <li>
                     <article class="blog_item">
+                        <h2 class="hidden">Blog Item</h2>
                         <img class="blog_img" src="images/blog/blog3.jpg" alt="blog_3" width="380" height="220">
                         <p class="date_of_article">23rd August 2018</p>
-                        <a class="blog_title"href="#">Company logo or brand identity: which one is more important? brand identity</a>
+                        <a class="blog_title" href="#">Company logo or brand identity: which one is more important? brand identity</a>
                         <p class="blog_text">To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
                     </article>
                 </li>
                 <li>
                     <article class="blog_item">
+                        <h2 class="hidden">Blog Item</h2>
                         <img class="blog_img" src="images/blog/blog4.jpg" alt="blog_4" width="380" height="220">
                         <p class="date_of_article">23rd August 2018</p>
                         <a class="blog_title" href="#">Best financial</a>
@@ -70,6 +74,7 @@
                 </li>
                 <li>
                     <article class="blog_item">
+                        <h2 class="hidden">Blog Item</h2>
                         <img class="blog_img" src="images/blog/blog5.jpg" alt="blog_5" width="380" height="220">
                         <p class="date_of_article">23rd August 2018</p>
                         <a class="blog_title" href="#">Company logo or brand identity: which one is more important? brand identity</a>
@@ -77,7 +82,8 @@
                     </article>
                 </li>
                 <li>
-                    <article class="blog_item" class="blog_item">
+                    <article class="blog_item">
+                        <h2 class="hidden">Blog Item</h2>
                         <img class="blog_img" src="images/blog/blog6.jpg" alt="blog_6" width="380" height="220">
                         <p class="date_of_article">23rd August 2018</p>
                         <a class="blog_title" href="#">Top 5 fastest growing it service companies in philly</a>
@@ -99,9 +105,8 @@
     </main>
     <footer class="footer">
         <div class="footer_main container">
-            <div class="footer_nav">
+            <div>
                 <p class="footer_title">Navigation</p>
-                <div class="border"></div>
                     <ul class="nav_list dots_none">
                         <li class="footer_item"><a class="footer_link" href="#">About Us</a></li>
                         <li class="footer_item"><a class="footer_link" href="#">Blog</a></li>
@@ -111,9 +116,8 @@
                         <li class="footer_item"><a class="footer_link" href="#">Shop By Designer</a></li>
                     </ul>
             </div> 
-            <div class="footer_info">
+            <div>
                 <p class="footer_title">Customer Information</p>
-                <div class="border"></div>
                 <ul class="nav_list dots_none">
                     <li class="footer_item"><a class="footer_link" href="contact.html">Contact Us</a></li>
                     <li class="footer_item"><a class="footer_link" href="#">Sale Exclusions</a></li>
@@ -122,18 +126,17 @@
                     <li class="footer_item"><a class="footer_link" href="#">Search</a></li>
                 </ul>
             </div>        
-            <div class="footer_connect">
+            <div>
                 <p class="footer_title">Connect</p>
-                <div class="border"></div>
-                <div class="subscribe_wrapper">
-                    <div class="nav_email">
+                <div>
+                    <div class="nav_list">
                         <form action="#" method="POST" class="subscribe">
                             <label for="subscribe_email"></label>
                             <input id="subscribe_email" type="email" name="user_email" placeholder="Email" class="mail">
                             <button class="button" type="submit">Join</button>
                         </form>                
                     </div>
-                    <div class="footer_social">
+                    <div>
                         <ul class="social_list dots_none">
                             <li class="social_item"><a href="#"><img src="images/logo/facebook.svg" alt="facebook" width="30" height="30"></a></li>
                             <li class="social_item"><a href="#"><img src="images/logo/twitter.svg" alt="twitter" width="30" height="30"></a></li>
@@ -145,18 +148,27 @@
             </div> 
         </div>
         <div class="footer_bottom container">
-            <div class="border_rating"></div>
             <div class="rating_wrapper">
                 <p class="rating_text">Company Rating</p>
                 <div class="footer_rating">
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>                        
                 </div>                    
                 <p class="rating_license">Copyright © 2018 Dlk • Design Life Kids</p>
-                <p class="rating_production">Web Design — Direct Line Development</p>
+                <a class="rating_production" href="#">Web Design — Direct Line Development</a>
                 </div>
         </div>        
     </footer>

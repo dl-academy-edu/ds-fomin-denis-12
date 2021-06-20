@@ -86,7 +86,7 @@ h3 {
     background: #C1C1C1;
 }
 
-.modal .button {
+.popup_form .button {
     color: #E1E1E1;
     background: #C1C1C1; 
 }
@@ -127,12 +127,13 @@ h3 {
 .nav_link {
     display: flex;
     align-items: center;
-    margin-left: 60px;
+    margin-left: 59px;
   }
   
 .nav_search {
     display: flex;
     align-items: center;
+    margin-right: 2px;
   }
 
 .nav_item {
@@ -147,6 +148,7 @@ h3 {
 .button_search {
     border: none;
     background: none;
+    padding: 3px;
 }
 
 .header .header_contact {
@@ -166,8 +168,8 @@ h3 {
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
-    margin-top: 15px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 49px;
 }
 
 .breadcrumb_link {
@@ -364,14 +366,18 @@ h3 {
 
 .rating_star {
     margin-right: 3px;
+    width: 17px;
+    height: 16px;
+    cursor: pointer;
+    fill: #FFFFFF;
 }
 
 .rating_star:hover {
-    color: #836E5B;
-}
+    fill: #836E5B;
+} 
 
 .rating_star:active {
-    color: #C29974;
+    fill: #C29974;
 }
 
 .rating_license {
@@ -459,6 +465,17 @@ textarea:focus {
     line-height: 19px;
     font-weight: normal;
     margin-bottom: 3px;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
 }
 
 input[type="text"]::placeholder {

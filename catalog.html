@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Catalog</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="css/catalog.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header container">
-        <a href="index.html"><img src="images/mainlogo.svg" alt="logo" width="100" height="52"></a>
+        <a class="logo" href="index.html"><img src="images/mainlogo.svg" alt="logo" width="100" height="52"></a>
         <nav class="menu">
             <ul class="nav_link dots_none">
                 <li class="nav_item"><a href="blog.html">Blog</a></li>
@@ -39,7 +38,7 @@
                 <li class="category_item">
                     <a class="category_link" href="#">
                         <img src="images/category/category1.jpg" alt="Apparel Kids" width="280" height="270">
-                        <h3 class="category_title ">Apparel Kids</h3>
+                        <h3 class="category_title">Apparel Kids</h3>
                     </a>
                     
                 </li>
@@ -53,20 +52,20 @@
                 <li class="category_item">
                     <a class="category_link" href="toys.html">
                         <img src="images/category/category3.jpg" alt="Toys" width="280" height="270">
-                        <h3 class="category_title">Toys</h3>
+                        <h3 class="category_title title_wrapper">Toys</h3>
                     </a>
                     
                 </li>
                 <li class="category_item">
                     <a class="category_link" href="#">
                         <img src="images/category/category4.jpg" alt="Accessories" width="280" height="270">
-                        <h3 class="category_title">Accessories</h3>
+                        <h3 class="category_title title_wrapper">Accessories</h3>
                     </a>                    
                 </li>
                 <li class="category_item">
                     <a class="category_link" href="#">
                         <img src="images/category/category5.jpg" alt="Sale" width="280" height="270">
-                        <h3 class="category_title">Sale</h3>
+                        <h3 class="category_title title_wrapper">Sale</h3>
                     </a>                    
                 </li>
                 <li class="category_item">
@@ -132,16 +131,26 @@
             <div class="rating_wrapper">
                 <p class="rating_text">Company Rating</p>
                 <div class="footer_rating">
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>                        
                 </div>                    
                 <p class="rating_license">Copyright © 2018 Dlk • Design Life Kids</p>
-                <p class="rating_production">Web Design — Direct Line Development</p>
+                <a class="rating_production" href="#">Web Design — Direct Line Development</a>
                 </div>
         </div>        
-    </footer> 
+    </footer>
 </body>
 </html>

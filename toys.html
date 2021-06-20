@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Toys</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/toys.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="css/toys.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header container">
-        <a href="index.html"><img src="images/mainlogo.svg" alt="logo" width="100" height="52"></a>
+        <a class="logo" href="index.html"><img src="images/mainlogo.svg" alt="logo" width="100" height="52"></a>
         <nav class="menu">
             <ul class="nav_link dots_none">
                 <li class="nav_item"><a href="blog.html">Blog</a></li>
@@ -39,11 +38,11 @@
         <section class="toys_sidebar">
             <h2 class="hidden">Toys</h2>
             <div class="sidebar">
-                <form action="" name="sidebar" class="sidebar_form container">
+                <form action="/" name="sidebar" class="sidebar_form container">
                     <fieldset class="cost">
                         <legend>Cost</legend>
                         <div class="sidebar_cost_wrapper">
-                            <input id="sidebar_cost" type="range" name="cost_range" min="0" max="500" class="sidebar_input_cost">
+                            <input id="sidebar_cost" type="range" name="cost_range" min="0" max="500" step="1" class="sidebar_input_cost">
                             <label for="sidebar_cost" class="sidebar_label_cost"></label>
                         </div>                        
                         <div class="cost_slide_number">
@@ -108,32 +107,51 @@
             <h2 class="hidden">Catalog</h2>
             <ul class="catalog_list dots_none">
                 <li class="catalog_item">
-                    <a class="catalog_img" href="#"><img src="images/catalog/catalog1.png" alt="SHARKY BEAN BAG CHAIR COVER" width="380" height="385"></a>
+                    <a class="catalog_img" href="#"><img src="images/catalog/catalog1.png" alt="SHARKY BEAN BAG CHAIR COVER" width="380" height="385">
+                        <div class="learn_more">
+                            <p class="learn_more_text">Learn More</p>
+                        </div>
+                    </a>
                     <a class="catalog_link" href="#">Sharky Bean Bag Chair Cover</a>
                     <p class="catalog_price">$60.00 USD</p>
                 </li>
                 <li class="catalog_item">
-                    <a href="#"><img src="images/catalog/catalog2.png" alt="BRASS DECO FRAMES" width="380" height="385"></a>
+                    <a class="catalog_img" href="#"><img src="images/catalog/catalog2.png" alt="BRASS DECO FRAMES" width="380" height="385">
+                        <div class="learn_more">
+                            <p class="learn_more_text">Learn More</p>
+                        </div></a>
                     <a class="catalog_link" href="#">Brass Deco Frames</a>
                     <p class="catalog_price">$66.00 USD</p>
                 </li>
                 <li class="catalog_item">
-                    <a href="#"><img src="images/catalog/catalog3.png" alt="CIBO FULL APRON" width="380" height="385"></a>
+                    <a class="catalog_img" href="#"><img src="images/catalog/catalog3.png" alt="CIBO FULL APRON" width="380" height="385">
+                        <div class="learn_more">
+                            <p class="learn_more_text">Learn More</p>
+                        </div></a>
                     <a class="catalog_link" href="#">Cibo Full Apron</a>
                     <p class="catalog_price">$60.00 USD</p>
                 </li>
                 <li class="catalog_item">
-                    <a href="#"><img src="images/catalog/catalog4.png" alt="GATCHA GATCHA GUMBALL MACHINE" width="380" height="385"></a>
+                    <a class="catalog_img" href="#"><img src="images/catalog/catalog4.png" alt="GATCHA GATCHA GUMBALL MACHINE" width="380" height="385">
+                        <div class="learn_more">
+                            <p class="learn_more_text">Learn More</p>
+                        </div></a>
                     <a class="catalog_link" href="#">Gatcha Gatcha Gumball Machine</a>
                     <p class="catalog_price">$56.00 USD</p>                    
                 </li>
                 <li class="catalog_item">
-                    <a href="#"><img src="images/catalog/catalog5.png" alt="CHRISTMAS ADVENT SCENTED CANDLE" width="380" height="385"></a>
+                    <a class="catalog_img" href="#"><img src="images/catalog/catalog5.png" alt="CHRISTMAS ADVENT SCENTED CANDLE" width="380" height="385">
+                        <div class="learn_more">
+                            <p class="learn_more_text">Learn More</p>
+                        </div></a>
                     <a class="catalog_link" href="#">Christmas Advent Scented Candle</a>
                     <p class="catalog_price">$29.00 USD</p>                    
                 </li>
                 <li class="catalog_item">
-                    <a href="#"><img src="images/catalog/catalog6.png" alt="TANGLE SPINNING TEA LIGHT" width="380" height="382"></a>
+                    <a class="catalog_img" href="#"><img src="images/catalog/catalog6.png" alt="TANGLE SPINNING TEA LIGHT" width="380" height="382">
+                        <div class="learn_more">
+                            <p class="learn_more_text">Learn More</p>
+                        </div></a>
                     <a class="catalog_link" href="#">Tangle Spinning Tea Light</a>
                     <p class="catalog_price">$56.00 USD</p>                    
                 </li>
@@ -152,9 +170,8 @@
     </main>
     <footer class="footer">
         <div class="footer_main container">
-            <div class="footer_nav">
+            <div>
                 <p class="footer_title">Navigation</p>
-                <div class="border"></div>
                     <ul class="nav_list dots_none">
                         <li class="footer_item"><a class="footer_link" href="#">About Us</a></li>
                         <li class="footer_item"><a class="footer_link" href="#">Blog</a></li>
@@ -164,9 +181,8 @@
                         <li class="footer_item"><a class="footer_link" href="#">Shop By Designer</a></li>
                     </ul>
             </div> 
-            <div class="footer_info">
+            <div>
                 <p class="footer_title">Customer Information</p>
-                <div class="border"></div>
                 <ul class="nav_list dots_none">
                     <li class="footer_item"><a class="footer_link" href="contact.html">Contact Us</a></li>
                     <li class="footer_item"><a class="footer_link" href="#">Sale Exclusions</a></li>
@@ -175,18 +191,17 @@
                     <li class="footer_item"><a class="footer_link" href="#">Search</a></li>
                 </ul>
             </div>        
-            <div class="footer_connect">
+            <div>
                 <p class="footer_title">Connect</p>
-                <div class="border"></div>
-                <div class="subscribe_wrapper">
-                    <div class="nav_email">
+                <div>
+                    <div class="nav_list">
                         <form action="#" method="POST" class="subscribe">
                             <label for="subscribe_email"></label>
                             <input id="subscribe_email" type="email" name="user_email" placeholder="Email" class="mail">
                             <button class="button" type="submit">Join</button>
                         </form>                
                     </div>
-                    <div class="footer_social">
+                    <div>
                         <ul class="social_list dots_none">
                             <li class="social_item"><a href="#"><img src="images/logo/facebook.svg" alt="facebook" width="30" height="30"></a></li>
                             <li class="social_item"><a href="#"><img src="images/logo/twitter.svg" alt="twitter" width="30" height="30"></a></li>
@@ -198,20 +213,29 @@
             </div> 
         </div>
         <div class="footer_bottom container">
-            <div class="border_rating"></div>
             <div class="rating_wrapper">
                 <p class="rating_text">Company Rating</p>
                 <div class="footer_rating">
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">        
-                    <img class="rating_star" src="images/star.svg" alt="star" width="17" height="16">
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" class="rating_star" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.60845 0.927052C5.9078 0.0057416 7.21121 0.00574088 7.51056 0.927052L8.58013 4.21885H12.0413C13.0101 4.21885 13.4128 5.45846 12.6291 6.02786L9.82895 8.06231L10.8985 11.3541C11.1979 12.2754 10.1434 13.0415 9.35968 12.4721L6.55951 10.4377L3.75934 12.4721C2.97563 13.0415 1.92115 12.2754 2.2205 11.3541L3.29007 8.06231L0.4899 6.02787C-0.293814 5.45846 0.108961 4.21885 1.07768 4.21885H4.53888L5.60845 0.927052Z"/>
+                    </svg>                        
                 </div>                    
                 <p class="rating_license">Copyright © 2018 Dlk • Design Life Kids</p>
-                <p class="rating_production">Web Design — Direct Line Development</p>
+                <a class="rating_production" href="#">Web Design — Direct Line Development</a>
                 </div>
         </div>        
-    </footer> 
+    </footer>
 </body>
 </html>
