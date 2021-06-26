@@ -210,6 +210,10 @@ input {
     margin-top: 15px;
 }
 
+.amount_wrapper {
+    padding-left: 8px;
+}
+
 .sidebar_input_amount {
     display: none;
 }
@@ -282,7 +286,7 @@ input {
 }
 
 .learn_more_text {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Arial Narrow", sans-serif;
     font-weight: bold;
     font-size: 26px;
     line-height: 29px;
