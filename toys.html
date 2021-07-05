@@ -43,31 +43,32 @@
                         <legend>Cost</legend>
                         <div class="sidebar_cost_wrapper">
                             <input id="sidebar_cost" type="range" name="cost_range" min="0" max="500" step="1" class="sidebar_input_cost">
-                            <label for="sidebar_cost" class="sidebar_label_cost"></label>
-                        </div>                        
-                        <div class="cost_slide_number">
-                            <p>0</p>
-                            <p>500</p>
-                        </div>                    
+                            <label for="sidebar_cost" class="sidebar_label_cost">
+                                <div class="cost_slide_number">
+                                    <p>0</p>
+                                    <p>500</p>
+                                </div> 
+                            </label>
+                        </div>
                     </fieldset>
                     <fieldset class="color">
                         <legend>Color</legend>
                         <ul class="dots_none form_list">
                             <li class="form_item">
                                 <input id="color_black" type="checkbox" name="black"  class="sidebar_input_check" checked>
-                                <label for="color_black" class="sidebar_label_check">Black</label>
+                                <label for="color_black" class="sidebar_label_check" tabindex="0">Black</label>
                             </li>
                             <li class="form_item">
                                 <input id="color_blue" type="checkbox" name="blue" class="sidebar_input_check">
-                                <label for="color_blue" class="sidebar_label_check">Blue</label>                             
+                                <label for="color_blue" class="sidebar_label_check" tabindex="0">Blue</label>                             
                             </li>
                             <li class="form_item">
                                 <input id="color_green" type="checkbox" name="green" class="sidebar_input_check">
-                                <label for="color_green" class="sidebar_label_check">Green</label>
+                                <label for="color_green" class="sidebar_label_check" tabindex="0">Green</label>
                             </li>
                             <li class="form_item">
                                 <input id="color_white" type="checkbox" name="white" class="sidebar_input_check">
-                                <label for="color_white" class="sidebar_label_check">White</label>                            
+                                <label for="color_white" class="sidebar_label_check" tabindex="0">White</label>                            
                             </li>
                         </ul>                                         
                     </fieldset>
@@ -76,11 +77,11 @@
                         <ul class="dots_none form_list">
                             <li class="form_item">
                                 <input id="free_radio" type="radio" name="shipping" class="sidebar_input_radio">
-                                <label for="free_radio" class="sidebar_label_radio">Free shipping</label>
+                                <label for="free_radio" class="sidebar_label_radio" tabindex="0">Free shipping</label>
                             </li>
                             <li class="form_item">
                                 <input id="fast_radio" type="radio" name="shipping" class="sidebar_input_radio" checked>
-                                <label for="fast_radio" class="sidebar_label_radio">Fast shipping</label>
+                                <label for="fast_radio" class="sidebar_label_radio" tabindex="0">Fast shipping</label>
                             </li>
                         </ul>                      
                     </fieldset>
@@ -88,15 +89,16 @@
                         <legend>Amount</legend>
                         <div class="amount_item">
                             <input id="radio_min" type="radio" name="amount" class="sidebar_input_amount" checked>
-                            <label for="radio_min" class="sidebar_label_amount">0-5</label>
+                            <label for="radio_min" class="sidebar_label_amount" tabindex="0">
+                                <div class="amount_wrapper">0-5</div></label>
                         </div>
                         <div class="amount_item">
                             <input id="radio_medium" type="radio" name="amount" class="sidebar_input_amount">
-                            <label for="radio_medium" class="sidebar_label_amount">10-20</label>
+                            <label for="radio_medium" class="sidebar_label_amount" tabindex="0">10-20</label>
                         </div>
                         <div class="amount_item">
                             <input id="radio_max" type="radio" name="amount" class="sidebar_input_amount">
-                            <label for="radio_max" class="sidebar_label_amount">20-50</label>                        
+                            <label for="radio_max" class="sidebar_label_amount" tabindex="0">20-50</label>                        
                         </div>
                     </fieldset>
                     <button class="button sidebar_btn" type="submit">APPLY</button>

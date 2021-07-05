@@ -1,5 +1,7 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing:border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -20,7 +22,7 @@ a {
 }
 
 h1, h2, h3 {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Arial Narrow", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: #1E0606;
@@ -66,9 +68,15 @@ h3 {
     line-height: 22px;
     text-transform: uppercase;
     border: none;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    -webkit-display: flex;
+        -moz-display:flex;
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center;
+            align-items: center;
+    -webkit-text-align: center;
+        -moz-text-align: center;
+            text-align: center;
     cursor: pointer;
     color: #FFFFFF;
     background: #000000;    
@@ -99,9 +107,15 @@ h3 {
 /* Header */
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 40px;
 }
@@ -120,19 +134,31 @@ h3 {
 
 .menu {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
 }
 
 .nav_link {
-    display: flex;
-    align-items: center;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center;
+            align-items: center;
     margin-left: 59px;
   }
   
 .nav_search {
-    display: flex;
-    align-items: center;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center;
+            align-items: center;
     margin-right: 2px;
   }
 
@@ -162,8 +188,10 @@ h3 {
 /* Breadcrumb */
 
 .breadcrumb {
-    display: flex;
-    font-family: Crimson Text;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    font-family: "Crimson Text", "Georgia", serif;
     font-style: italic;
     font-weight: normal;
     font-size: 20px;
@@ -186,20 +214,52 @@ h3 {
     opacity: 0.5;
 }
 
+/* Category */
+
+.category_item:nth-child(1) {
+    background-color: #DBE4DB;
+}
+
+.category_item:nth-child(2) {
+    background-color: #EADDD3;
+}
+
+.category_item:nth-child(3) {
+    background-color: #F8F2DA;
+}
+
+.category_item:nth-child(4) {
+    background-color: #D5D4E1;
+}
+
+.category_item:nth-child(5) {
+    background-color: #F3D0DB;
+}
+
+.category_item:nth-child(6) {
+    background-color: #E5EAF8;
+}
+
 /* Pagination */
 
 .pages_slider {
-    display: flex;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
     margin-bottom: 63px;
 }
 
 .slider_list {
-    display: flex;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
 }
 
 .slider_link {
-    font-family: Montserrat;
+    font-family: "Montserrat", "Arial Narrow", sans-serif;
     font-weight: bold;
     margin-right: 64px;
 }
@@ -238,8 +298,12 @@ h3 {
 }
 
 .footer_main {
-    display: flex;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
     margin-bottom: 13px;
 }
 
@@ -278,7 +342,9 @@ h3 {
 }
 
 .subscribe {
-    display: flex;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
     width: 380px;
     height: 40px;
     background: #666666;
@@ -298,7 +364,7 @@ h3 {
     height: 40px;
     background-color: #666666;
     padding: 0 0 0 15px;
-    border: none;
+    border: 1px solid #666666;
 }
 
 .mail:hover{
@@ -310,7 +376,9 @@ h3 {
   }
 
 .social_list {
-    display: flex;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
 }
 
 .social_item {
@@ -340,8 +408,12 @@ h3 {
 }
 
 .rating_wrapper {
-    display: flex;
-    align-items: center;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center;
+            align-items: center;
 }
 
 .rating_text {
@@ -358,9 +430,15 @@ h3 {
 }
 
 .footer_rating {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-align-items: center;
+        -moz-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
     margin-right: 155px;
 }
 
@@ -403,8 +481,12 @@ h3 {
 /* Form */
 
 .contact {
-    display: flex;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
 }
 
 .contact_form {
@@ -445,15 +527,23 @@ textarea:focus {
 }
 
 .label_wrapper {
-    display: flex;
-    flex-direction: column;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
 }
 
 .form_2_column {
-    display: flex;
-    justify-content: space-between;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+            justify-content: space-between;
 }
 
 .two_column {
